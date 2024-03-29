@@ -69,9 +69,7 @@ a{
 .fa-home{
     color: black;
 }
-.carousel-item img{
-    height: 100vh;
-}
+
 #carouselExampleIndicators{
     padding: 100px 0px!important;
     position: relative;
