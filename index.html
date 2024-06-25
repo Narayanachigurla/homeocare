@@ -63,13 +63,16 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./images/banner.png" class="d-block w-100" alt="...">
+          <img src="./images/banner.png" class="w-100 desktop" alt="...">
+          <img src="./images/banner2.png" class="w-100 mobile" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./images/banner.png" class="d-block w-100" alt="...">
+          <img src="./images/banner.png" class="w-100 desktop" alt="...">
+          <img src="./images/banner2.png" class="w-100 mobile" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./images/banner.png" class="d-block w-100" alt="...">
+          <img src="./images/banner.png" class="w-100 desktop" alt="...">
+          <img src="./images/banner2.png" class="w-100 mobile" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -596,6 +599,18 @@ breakpoints: {
 },
 },
 });
+</script>
+
+<script>
+  let navbar_nav = document.querySelectorAll(".navbar-nav");
+  let navbarNav = document.getElementById("navbarNav");
+  console.log(navbar_nav);
+  navbar_nav.forEach((curElem) => {
+    curElem.addEventListener("click", () => {
+      navbarNav.classList.toggle("show");
+    })
+  });
+
 </script>
 
   </body>
