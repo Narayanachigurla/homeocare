@@ -76,11 +76,11 @@ a{
     padding: 100px 0px!important;
     position: relative;
 }
-@media(max-width:768px){
+/* @media(max-width:768px){
     .carousel{
         margin-top: 100px;
     }
-}
+} */
 
 
 /* -----------------About section--------------------- */
@@ -451,3 +451,25 @@ border: 1px solid #3bedff;
     bottom: 52px;
 }
 
+@media (max-width:768px){
+    .desktop{
+        display: none;
+    }
+}
+@media (min-width:768px){
+    .mobile{
+        display: none;
+    }
+}
+
+.carousel-indicators [data-bs-target] {
+    border-bottom: 10px solid black!important;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 20px;
+    background: black;
+    padding: 10px 15px;
+    border-radius: 50%;
+    color: #fff;
+}
